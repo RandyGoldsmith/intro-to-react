@@ -1,0 +1,9 @@
+Exercises
+
+> Peruse the Official React documentation by Facebook, note down anything interesting you find and discuss learnings with your mentor and Bloc Slack community. In addition, discuss with your mentor a strategy to read documentation more efficiently. This is a critically important skill to develop as software developer, as technologies keep evolving.
+
+A: JSX is optional, and when i looked at the Babel REPL to see the raw JavaScript code, it seems a little more complex
+and longer. Using JSX, we can simplify our code. Using this.props, we can pass input data. When you include curly braces inside
+your JSX, it will render them as JavaScript expressions. They also recommend using "Babel" language definition for our editor of choice
+so that ES6 and JSX code will be properly highlighted. Applications using React usually only have a single root DOM node from which
+your app will display. If you find that part of your UI is used several times, you should probably make it into a reusable component.
