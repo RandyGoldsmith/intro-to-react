@@ -1,0 +1,13 @@
+Exercises
+
+Before You Begin: Create a new Git feature branch for this assignment. See Git Checkpoint Workflow: Before Each Assignment for details.
+
+> In your own words, explain the essential differences between props and state in React. Which is immutable or read-only, and which changes? Discuss the answer with your mentor.
+
+A: Props are passed into components rather than set inside them, kind of like how arguments are passed to a function. You can also set the default value of a prop from the component, though
+still, the prop is still not set inside a component and is controlled by the parent. Since props are passed into components, they are immutable. They are considered pure because we can
+always expect that component to render the same output with the same given input. State on the other hand, will deal with data that changes over time. State is created inside components
+and is "reserved for interactivity." An example of state is a countdown timer. At one point in time, the state of the timer will change from let's say 1 to 2. You can't use props
+since props are immutable and are only doing what the parent tells it to do whereas state is set explicitly inside the component and can change.
+
+> Read the React official documentation on components and props, and brush up on JavaScript ES6 *classes
