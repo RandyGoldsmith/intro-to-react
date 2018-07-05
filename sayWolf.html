@@ -10,14 +10,38 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
       <script type="text/babel">
         class SayWolf extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              age: 1
+            }
+          }
+
+
           render() {
             return (
-              <p>Wolf wolf!</p>
+              <div>
+                <img src={this.props.image} alt='Picture of a yellow lab' />
+                <h2>Dutch says: {this.props.bark}</h2>
+                <h3>Name: {this.props.name}</h3>
+                <h3>Age: {this.state.age}</h3>
+              </div>
             );
           }
         }
 
-        ReactDOM.render(<SayWolf />, document.getElementById('app'));
+        const dog = {
+          bark: 'Wolf!',
+          name: 'Dutch',
+          image: 'http://gottalovealab.com/images/yellow-lab-names.jpg'
+        }
+
+        ReactDOM.render(
+          <SayWolf
+            image={dog.image}
+            bark={dog.bark}
+            name={dog.name} />, document.getElementById('app')
+          );
 
       </script>
     </body>
